@@ -1,10 +1,10 @@
-import { observable, action, runInAction, toJS, makeAutoObservable } from 'mobx'
+import { makeAutoObservable } from 'mobx'
 class UserListStore {
 
-  name = "jjkll;"
+  name = "jjkll;" //mobx6新写法
 
   constructor() {
-    makeAutoObservable(this)
+    makeAutoObservable(this) //mobx6新写法
   }
 
   setName(name) {
